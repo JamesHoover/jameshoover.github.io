@@ -1,2 +1,2 @@
-James Hoover Design
-# jameshoover.github.io
+# James Hoover Design
+jameshooverdesign.com
