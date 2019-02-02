@@ -1,1 +1,36 @@
-<h1>Hello World</h1>
+<!DOCTYPE HTML PUBLIC>
+<html>
+   <head>
+   		<meta charset="utf-8">
+   		<meta name="viewport" content="width=device-width, initial-scale=1">
+   		<meta name="description" content="I'm James, a designer from Seattle. Currently the product designer at Algorithmia.">
+		  <meta name="author" content="James Hoover">
+		  <meta name="publisher" content="James Hoover">
+		  <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo.png">
+      <title>James Hoover // Product Designer</title>
+      <link rel="stylesheet" href="main.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script src="main.js"></script>
+   </head>
+   <body id="colored__bg">
+		<div class="container">
+			<div class="home__image">
+				<div class="home__image--container">
+					<img src="assets/images/winnie.jpg" class="home__image--img">
+				</div>
+			</div>
+			<div id="colored__text" class="home__text">
+				<h1 class="display-lg">Hello,</h1>
+				<p>I’m James, a designer from Seattle.<br>Currently the product designer @ <a href="https://algorithmia.com/" id="colored__link" target="_blank">Algorithmia</a>.</p>
+				<p><small>jamesfhoover@gmail.com</small></p>
+			</div>
+			<span onClick="randomize()" class="colored__helper">trouble reading?</span>
+		</div>
+  </body>
+</html>
+<script type="text/javascript">
+// Set colors on load
+$(document).ready(function(){
+	randomize();
+});
+</script>
