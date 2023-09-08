@@ -7,24 +7,35 @@
 		  <meta name="author" content="James Hoover">
 		  <meta name="publisher" content="James Hoover">
 		  <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo.png">
-      <title>James Hoover // Product Designer</title>
-      <link rel="stylesheet" href="main.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<title>James Hoover // Product Designer</title>
+		<link rel="stylesheet" href="main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 			<script src="main.js"></script>
+		<style>
+			#content {
+				width: 800px;
+				margin: auto;
+				height: 100%;
+				display: flex;
+				align-items: center;
+			}
+		</style>
    </head>
    <body id="colored__bg">
 		<div class="container">
-			<div class="home__image">
-				<div class="home__image--container">
-					<img src="assets/images/winnie.jpg" class="home__image--img">
+			<div class="section">
+				<h1 class="display-lg">Hello,</h1>
+			</div>
+			<div class="section">
+				<div id="colored__text" class="home__text">
+					<p>I’m James, a product designer from Seattle with a decade of experience in the tech industry.</p>
+					<p><small>jamesfhoover@gmail.com</small></p>
+				</div>
+				<div id="content">
+					<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FiDogmoJENx2ZTp4bXWOb1V%2FJames-Hoover-Portfolio%3Ftype%3Ddesign%26node-id%3D508%253A9807%26mode%3Ddesign%26t%3DmGwypNC80wpItCyr-1" allowfullscreen></iframe>
 				</div>
 			</div>
-			<div id="colored__text" class="home__text">
-				<h1 class="display-lg">Hello,</h1>
-				<p>I’m James, a designer from Seattle.<br>Currently the product designer @ <a href="https://algorithmia.com/" id="colored__link" target="_blank">Algorithmia</a>.</p>
-				<p><small>jamesfhoover@gmail.com</small></p>
-			</div>
-			<span onClick="randomize()" class="colored__helper">trouble reading?</span>
+			<span onClick="randomize()" class="colored__helper">Change Background Color</span>
 		</div>
   </body>
 </html>
