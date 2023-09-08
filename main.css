@@ -82,8 +82,8 @@ h1 {
 	margin-bottom: 4rem;
 }
 p {
-	margin-bottom: 2.25rem;
-  letter-spacing: 1.3px;
+	margin-bottom: 1rem;
+    letter-spacing: 1.3px;
 }
 .inline-list li {
 	font-size: .75rem;
@@ -114,10 +114,13 @@ a:visited {
 .container {
   position: relative;
   max-width: 1080px;
-  min-height: 100vh;
+  min-height: 80vh;
   width: 100%;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 2rem auto;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   -webkit-box-align: flex-start;
@@ -125,6 +128,7 @@ a:visited {
   align-items: flex-start;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  background-color: rgba(255, 255, 255, .24);
 }
 .container.right {
 	flex-direction: column;
@@ -210,12 +214,13 @@ a:visited {
 }
 .colored__helper {
 	font-size: .75rem;
+	margin-top: 2rem;
 	padding: .5rem 1.5rem;
 	color: #222;
 	background-color: #fff;
-	position: absolute;
+	/* position: absolute;
 	bottom: 4rem;
-	left: 2rem;
+	right: 4rem; */
 	cursor: pointer;
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
