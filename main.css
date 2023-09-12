@@ -197,6 +197,11 @@ a:visited {
   padding-bottom: 0;
   margin-bottom: 1rem;
 }
+
+.margin__top_2 {
+	margin-top: 2rem;
+}
+
 .bg__text {
   padding-bottom: .5rem;
   padding-left: 1rem;
@@ -230,7 +235,7 @@ a:visited {
 .colored__helper {
 	font-size: .75rem;
 	font-weight: 600;
-	margin-top: 2rem;
+	margin-top: 1rem;
 	padding: 1rem 1.5rem;
 	background-color: #222;
 	color: #fff;
