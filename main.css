@@ -236,18 +236,19 @@ a:visited {
 	font-size: .75rem;
 	font-weight: 600;
 	padding: 1rem 1.5rem;
-	background-color: #222;
-	color: #fff;
+	background-color: #fff;
+	color: #222;
 	border-radius: 4px;
 	position: fixed;
 	right: 2rem;
 	bottom: 2rem;
 	cursor: pointer;
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+	user-select: none;
 }
 .color__changer:hover {
-	background-color: #323232;
-	color: #fff;
+	background-color: #e7e7e7;
+	color: #222;
 }
 /*WORK*/
 .text__container .title {
