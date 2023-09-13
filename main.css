@@ -232,21 +232,20 @@ a:visited {
 	bottom: 0;
 	display: none;
 }
-.colored__helper {
+.color__changer {
 	font-size: .75rem;
 	font-weight: 600;
-	margin-top: 1rem;
 	padding: 1rem 1.5rem;
 	background-color: #222;
 	color: #fff;
 	border-radius: 4px;
-	/* position: absolute;
-	bottom: 4rem;
-	right: 4rem; */
+	position: fixed;
+	right: 2rem;
+	bottom: 2rem;
 	cursor: pointer;
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
-.colored__helper:hover {
+.color__changer:hover {
 	background-color: #323232;
 	color: #fff;
 }
@@ -408,21 +407,18 @@ small {
 
 	.home__image,
 	.gallery__image {
-	  max-width: 700px;
-  	-webkit-box-align: center;
-  	-ms-flex-align: center;
-  	align-items: center;
-  	right: 0;
-  	left: auto;
-  }
+	  	max-width: 700px;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		right: 0;
+		left: auto;
+	}
 	h1 {
 		font-size: 1.5rem;
 	}
 	p {
 		font-size: 1.25rem;
-	}
-	.colored__helper {
-		bottom: 2rem;
 	}
 }
 /* Medium */
