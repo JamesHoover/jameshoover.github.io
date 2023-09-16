@@ -2,19 +2,33 @@
 	James Hoover
 	jameshooverdesign.com
 */
-@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:100,100i,700');
-/*@font-face {
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:100,100i,400,700');
+@font-face {
   font-family: 'IKANSEEYOUALL';
   src: url('assets/fonts/IKANSEEYOUALL.eot');
   src: url('assets/fonts/IKANSEEYOUALL.eot?iefix') format('eot'),
        url('assets/fonts/IKANSEEYOUALL.woff') format('woff'),
        url('assets/fonts/IKANSEEYOUALL.ttf') format('truetype'),
        url('assets/fonts/IKANSEEYOUALL.svg#webfont') format('svg');
-}*/
+}
 @font-face {
   font-family: 'grouch';
   src: url('assets/fonts/grouch.ttf') format('truetype');
 }
+@font-face {
+	font-family: 'GT-Walsheim';
+	src: url('assets/fonts/GT-Walsheim-Regular.otf');
+	src: url('assets/fonts/GT-Walsheim-Regular.woff') format('woff'),
+		 url('assets/fonts/GT-Walsheim-Regular.ttf') format('truetype'),
+}
+@font-face {
+	font-family: 'GT-Sectra';
+	src: url('assets/fonts/GT-Sectra-Display-Bold.otf');
+	src: url('assets/fonts/GT-Sectra-Display-Bold.woff') format('woff'),
+		 url('assets/fonts/GT-Sectra-Display-Bold.ttf') format('truetype'),
+}
+
+  GT-Sectra-Display-Bold.woff
 
 /* RESET */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
@@ -35,6 +49,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
 	line-height: 1;
 	-webkit-text-size-adjust: none;
+	background-color: #222;
 }
 ol, ul {
 	list-style: none;
@@ -68,9 +83,9 @@ table {
 /*ELEMENTS*/
 body {
 	font-size: 16px;
-	font-family: 'Libre Franklin', sans-serif;
+	font-family: 'GT-Walsheim', 'Libre Franklin', sans-serif;
 	font-weight: lighter;
-	color: rgba(0,0,0,.87);
+	color: #222;
 }
 h1,h2,h3,h4,h5,h6,li,p {
 	line-height: 1.5;
@@ -79,11 +94,15 @@ h1,h2,h3,h4,h5,h6,li,p {
 h1 {
 	font-size: 1.5rem;
 	font-weight: 700;
+	margin-bottom: 2rem;
+}
+h2 {
+	font-size: 1.25rem;
+	font-weight: 700;
 	margin-bottom: 4rem;
 }
 p {
 	margin-bottom: 1rem;
-    letter-spacing: 1.3px;
 }
 .inline-list li {
 	font-size: .75rem;
@@ -105,6 +124,7 @@ a {
   text-decoration: none;
   cursor: pointer;
   text-decoration: underline;
+  font-size: 1.25rem;
 }
 a:hover {
 	text-decoration: underline;
@@ -119,8 +139,8 @@ a:visited {
   min-height: 80vh;
   width: 100%;
   margin: 2rem auto;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   padding-top: 1rem;
   padding-bottom: 2rem;
   display: flex;
@@ -130,7 +150,8 @@ a:visited {
   align-items: flex-start;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  /* background-color: rgba(255, 255, 255, .24); */
+  background-color:rgba(255,255,255,0.86);
+  border-radius: 8px;
 }
 .container.right {
 	flex-direction: column;
@@ -194,8 +215,6 @@ a:visited {
 .text__container {
   max-width: 680px;
   position: relative;
-  /* padding-top: 1rem; */
-  padding-bottom: 0;
   margin-bottom: 1rem;
 }
 
@@ -230,7 +249,15 @@ a:visited {
 }
 .display-lg {
 	font-size: 3rem;
-	font-family: 'grouch', 'Libre Franklin', sans-serif;
+	font-family: 'GT-Sectra', 'Libre Franklin', sans-serif;
+	font-weight: bold;
+	letter-spacing: .125rem;
+	margin: 0;
+	margin-bottom: 1rem;
+}
+.display-md {
+	font-size: 1.5rem;
+	font-family: 'GT-Sectra', 'Libre Franklin', sans-serif;
 	font-weight: bold;
 	letter-spacing: .125rem;
 	margin: 0;
@@ -242,8 +269,11 @@ a:visited {
 	display: none;
 }
 .color__changer {
-	font-size: .75rem;
-	font-weight: 600;
+	/* position: fixed;
+	right: 2rem;
+	bottom: 2rem; */
+	font-size: 1rem;
+	font-weight: 700;
 	padding: 1rem 1.5rem;
 	background-color: #fff;
 	color: #222;
@@ -425,7 +455,8 @@ small {
 		font-size: 1.5rem;
 	}
 	p {
-		font-size: 1.25rem;
+		font-size: 1rem;
+		font-weight: 400;
 	}
 }
 /* Medium */
