@@ -251,7 +251,7 @@ a:visited {
 	font-size: 3rem;
 	font-family: 'GT-Sectra', 'Libre Franklin', sans-serif;
 	font-weight: bold;
-	letter-spacing: .125rem;
+	/* letter-spacing: .125rem; */
 	margin: 0;
 	margin-bottom: 1rem;
 }
@@ -259,9 +259,13 @@ a:visited {
 	font-size: 1.5rem;
 	font-family: 'GT-Sectra', 'Libre Franklin', sans-serif;
 	font-weight: bold;
-	letter-spacing: .125rem;
+	/* letter-spacing: .125rem; */
 	margin: 0;
 	margin-bottom: 1rem;
+}
+.main__copy {
+	font-size: 1.25rem;
+	margin-bottom: 4rem;
 }
 .social-info {
 	position: absolute;
@@ -413,6 +417,10 @@ small {
 	.no__desktop {
 		display: block!important;
 	}
+	.container {
+		margin: 0 auto;
+		border-radius: 0;
+	}
 }
 /* XSmall */
 @media screen and (min-width: 480px) {
@@ -469,6 +477,10 @@ small {
 	}
 	.no__desktop {
 		display: none!important;
+	}
+	.container {
+		margin: 2rem auto;
+		border-radius: 8px;
 	}
 }
 /* Large */
